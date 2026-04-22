@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NDA App — Support</title>
+<style>
+  :root { --ink:#1A1A1A; --ink-soft:#444; --ink-muted:#777; --bg:#F3F3F1; --accent:#6B2B4E; }
+  html,body{background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,sans-serif;line-height:1.6;margin:0;}
+  main{max-width:640px;margin:0 auto;padding:64px 24px;}
+  h1{font-family:"New York","Times New Roman",serif;font-weight:300;font-size:40px;letter-spacing:-0.5px;margin:0 0 8px;}
+  h2{font-family:"New York","Times New Roman",serif;font-weight:400;font-size:22px;margin:40px 0 8px;}
+  .eyebrow{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--ink-muted);margin-bottom:16px;}
+  p,li{color:#444;font-size:15px;}
+  ul{padding-left:20px;}
+  a{color:var(--accent);}
+  .card{background:#fff;border:1px solid #e5e3df;border-radius:12px;padding:20px;margin-top:24px;}
+  hr{border:none;border-top:1px solid #e5e3df;margin:48px 0 24px;}
+  small{color:var(--ink-muted);font-size:12px;}
+</style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">NDA App</div>
+  <h1>Support</h1>
+  <p>NDA App is deployed on-site as a visitor check-in kiosk. Most support questions come from the operator of the device rather than the visitor using it.</p>
+
+  <h2>For visitors</h2>
+  <p>If you are signing an NDA on an iPad and something went wrong — the camera wouldn't open, a field showed the wrong information, you signed under the wrong name, or the device froze — the fastest path is to tell the staff member who pointed you at the iPad. The property's administrator has direct access to the record and can correct or delete it on the device.</p>
+  <p>If you need to request a copy of an NDA you signed, or request deletion, contact the property operator where you signed.</p>
+
+  <h2>For operators and administrators</h2>
+  <p>Common questions and their answers:</p>
+  <ul>
+    <li><strong>How do I open the admin panel?</strong> Tap the small lock icon on the welcome screen, then enter your admin passcode (or use Face ID / Touch ID if enabled).</li>
+    <li><strong>How do I add or edit an NDA document?</strong> Admin panel → NDA Documents → Add or Edit. Changes apply to any signing that happens after the save.</li>
+    <li><strong>How do I export signed records?</strong> Admin panel → Settings → Data → Export signed NDAs (CSV) or Export a signed NDA (PDF).</li>
+    <li><strong>A record synced to the cloud but I want to delete it.</strong> Sign in to your Supabase project dashboard and delete the row from the Table Editor. (The iPad only has INSERT permission — it cannot delete cloud records.)</li>
+    <li><strong>I lost access to the admin passcode.</strong> On a test device, deleting and reinstalling the app resets the passcode. On a deployed device with production data, contact us — do <em>not</em> delete the app before retrieving the records.</li>
+  </ul>
+
+  <div class="card">
+    <h2 style="margin-top:0">Contact</h2>
+    <p><strong>Email:</strong> <a href="mailto:[CONTACT EMAIL]">[CONTACT EMAIL]</a></p>
+    <p><strong>Response time:</strong> within 2 business days for operator inquiries.</p>
+    <p><small>For privacy requests (access, correction, deletion under GDPR/CCPA), please include the property name and the date the NDA was signed so we can locate the record.</small></p>
+  </div>
+
+  <hr>
+  <p><small>See also: <a href="./privacy-policy.html">Privacy Policy</a> · <a href="./terms-of-service.html">Terms of Service</a></small></p>
+</main>
+</body>
+</html>
